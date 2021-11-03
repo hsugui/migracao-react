@@ -19,6 +19,7 @@ function Sidebar(props) {
 
     return (
         <>
+        <body class="sidebar-menu-collapsed">
             <section>
                 {/* <!-- sidebar menu start --> */}
                 <div class="sidebar-menu sticky-sidebar-menu">
@@ -55,6 +56,7 @@ function Sidebar(props) {
                 </div>
                 {/* <!-- //sidebar menu end --> */}
             </section>
+        </body>
         </>
     )
 }

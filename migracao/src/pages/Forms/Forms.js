@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from "react-router-dom";
 import { Container, Breadcrumb, Nav, Card, Form } from 'react-bootstrap';
 import '../../assets/css/style.css';
 
@@ -14,7 +15,7 @@ function Forms(props) {
                     {/* <!-- breadcrumbs --> */}
                     <Nav aria-label="breadcrumb" className="mb-4">
                         <Breadcrumb className="my-breadcrumb">
-                            <Breadcrumb.Item><a href="index.html">Home</a></Breadcrumb.Item>
+                        <Breadcrumb.Item><Link to={'index'}>Home</Link></Breadcrumb.Item>
                             <Breadcrumb.Item className="active" aria-current="page">Forms</Breadcrumb.Item>
                         </Breadcrumb>
                     </Nav>

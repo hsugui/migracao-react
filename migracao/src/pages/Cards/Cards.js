@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from "react-router-dom";
 import { Container, Breadcrumb, Nav, Row, Col, Card } from 'react-bootstrap';
 import '../../assets/css/style.css';
 import Cart from "../../assets/images/cart.jpg";
@@ -17,8 +18,8 @@ function Cards(props) {
                     {/* <!-- breadcrumbs --> */}
                     <Nav aria-label="breadcrumb" className="mb-4">
                         <Breadcrumb className="my-breadcrumb">
-                            <Breadcrumb.Item><a href="index.html">Home</a></Breadcrumb.Item>
-                            <Breadcrumb.Item><a href="#">Elements</a></Breadcrumb.Item>
+                            <Breadcrumb.Item><Link to={'/index'}>Home</Link></Breadcrumb.Item>
+                            <Breadcrumb.Item><Link to={'#'}>Elements</Link></Breadcrumb.Item>
                             <Breadcrumb.Item className="active" aria-current="page">Cards</Breadcrumb.Item>
                         </Breadcrumb>
                     </Nav>

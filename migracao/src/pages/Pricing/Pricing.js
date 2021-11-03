@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 import { Container, Breadcrumb, Nav, Row, Col, Card, ListGroup } from 'react-bootstrap';
 import '../../assets/css/style.css';
 
@@ -14,7 +15,7 @@ function Pricing(props) {
                     {/* <!-- breadcrumbs --> */}
                     <Nav aria-label="breadcrumb" className="mb-4">
                         <Breadcrumb className="my-breadcrumb">
-                            <Breadcrumb.Item><a href="index.html">Home</a></Breadcrumb.Item>
+                            <Breadcrumb.Item><Link to={'/index'}>Home</Link></Breadcrumb.Item>
                             <Breadcrumb.Item className="active" aria-current="page">Pricing Tables</Breadcrumb.Item>
                         </Breadcrumb>
                     </Nav>
@@ -51,8 +52,7 @@ function Pricing(props) {
                                                         <li>Help center access</li>
                                                     </ul>
                                                     <div className="mt-4">
-                                                        <a href="signup.html" className="btn btn-lg btn-outline-primary btn-style border-btn">Sign up for
-                                                            free</a>
+                                                        <Link to={'#'} className="btn btn-lg btn-outline-primary btn-style border-btn">Sign up for free</Link>
                                                     </div>
                                                 </Card.Body>
                                             </div>
@@ -75,7 +75,7 @@ function Pricing(props) {
                                                         <li>Help center access</li>
                                                     </ul>
                                                     <div className="mt-4">
-                                                        <a href="#" className="btn btn-lg btn-primary btn-style">Get started</a>
+                                                        <Link to={'#'} className="btn btn-lg btn-primary btn-style">Get started</Link>
                                                     </div>
                                                 </Card.Body>
                                             </div>
@@ -98,7 +98,7 @@ function Pricing(props) {
                                                         <li>Help center access</li>
                                                     </ul>
                                                     <div className="mt-4">
-                                                        <a href="#" className="btn btn-lg btn-outline-primary btn-style border-btn">Contact us</a>
+                                                        <Link to={'#'} className="btn btn-lg btn-outline-primary btn-style border-btn">Contact us</Link>
                                                     </div>
                                                 </Card.Body>
                                             </div>
@@ -138,7 +138,7 @@ function Pricing(props) {
                                                         <ListGroup.Item>Limited UI Blocks</ListGroup.Item>
                                                         <ListGroup.Item>24/7 Support System</ListGroup.Item>
                                                     </ListGroup>
-                                                    <a href="#" className="btn btn-style btn-primary mt-4">Choose Plan</a>
+                                                    <Link to={'#'} className="btn btn-style btn-primary mt-4">Choose Plan</Link>
                                                 </div>
                                             </Card>
                                         </Col>
@@ -161,7 +161,7 @@ function Pricing(props) {
                                                         <ListGroup.Item>Unlimited UI Blocks</ListGroup.Item>
                                                         <ListGroup.Item>24/7 Support System</ListGroup.Item>
                                                     </ListGroup>
-                                                    <a href="#" className="btn btn-style btn-primary mt-4">Choose Plan</a>
+                                                    <Link to={'#'} className="btn btn-style btn-primary mt-4">Choose Plan</Link>
                                                 </div>
                                             </Card>
                                         </Col>
@@ -184,7 +184,7 @@ function Pricing(props) {
                                                         <ListGroup.Item>Unlimited UI Blocks</ListGroup.Item>
                                                         <ListGroup.Item>24/7 Support System</ListGroup.Item>
                                                     </ListGroup>
-                                                    <a href="#" className="btn btn-style btn-primary mt-4">Choose Plan</a>
+                                                    <Link to={'#'} className="btn btn-style btn-primary mt-4">Choose Plan</Link>
                                                 </div>
                                             </Card>
                                         </Col>

@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from "react-router-dom";
 import { Container, Breadcrumb, Nav, Row, Col, Card } from 'react-bootstrap';
 import '../../assets/css/style.css';
 
@@ -14,7 +15,7 @@ function Index(props) {
 
                     <Nav aria-label="breadcrumb">
                         <Breadcrumb className="my-breadcrumb">
-                            <Breadcrumb.Item className=""><a href="index.html">Home</a></Breadcrumb.Item>
+                            <Breadcrumb.Item className=""><Link to={'/index'}>Home</Link></Breadcrumb.Item>
                             <Breadcrumb.Item className="active" aria-current="page">Dashboard</Breadcrumb.Item>
                         </Breadcrumb>
                     </Nav>
