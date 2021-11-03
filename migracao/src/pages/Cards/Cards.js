@@ -14,11 +14,11 @@ function Cards(props) {
             {/* <!-- main content start --> */}
             <div className="main-content">
                 {/* <!-- content --> */}
-                <Container fluid classNameName="content-top-gap">
+                <Container fluid className="content-top-gap">
                     {/* <!-- breadcrumbs --> */}
                     <Nav aria-label="breadcrumb" className="mb-4">
                         <Breadcrumb className="my-breadcrumb">
-                            <Breadcrumb.Item><Link to={'/index'}>Home</Link></Breadcrumb.Item>
+                            <Breadcrumb.Item><Link to={'index'}>Home</Link></Breadcrumb.Item>
                             <Breadcrumb.Item><Link to={'#'}>Elements</Link></Breadcrumb.Item>
                             <Breadcrumb.Item className="active" aria-current="page">Cards</Breadcrumb.Item>
                         </Breadcrumb>
