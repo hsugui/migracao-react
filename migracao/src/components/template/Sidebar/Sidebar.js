@@ -4,7 +4,7 @@ import '../../../assets/css/style.css';
 import Logo from '../../../assets/images/logo.png';
 import Toggle from './Toggle';
 
-function toggleMenu() {
+const toggleMenu = () => {
     let body = document.querySelector("body");
     let hasCollapsed = body.classList.contains("sidebar-menu-collapsed");
     if(hasCollapsed) {
@@ -20,7 +20,7 @@ function Sidebar(props) {
 
     return (
         <>
-        <body class="sidebar-menu-collapsed">
+        {/* <body class="sidebar-menu-collapsed"> */}
             <section>
                 {/* <!-- sidebar menu start --> */}
                 <div class="sidebar-menu sticky-sidebar-menu">
@@ -48,7 +48,7 @@ function Sidebar(props) {
                         </ul>
                         {/* <!-- //sidebar nav end --> */}
                         {/* <!-- toggle button start --> */}
-                        <a class="toggle-btn" onclick={ () => this.toggleMenu()}>
+                        <a class="toggle-btn" onclick={toggleMenu()}>
                             <i class="fa fa-angle-double-left menu-collapsed__left"><span>Collapse Sidebar</span></i>
                             <i class="fa fa-angle-double-right menu-collapsed__right"></i>
                         </a>
@@ -57,7 +57,7 @@ function Sidebar(props) {
                 </div>
                 {/* <!-- //sidebar menu end --> */}
             </section>
-        </body>
+        {/* </body> */}
         </>
     )
 }
