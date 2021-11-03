@@ -6004,3 +6004,8 @@ img {
     line-height: 30px; } }
 
 /*# sourceMappingURL=style-starter.css.map */
+
+.profile_imagem_custom {
+  padding: 0 !important;
+  border: none !important;
+}

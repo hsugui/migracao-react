@@ -1,5 +1,5 @@
 import React from 'react'
-import { Form, Button, Nav } from 'react-bootstrap';
+import { ListGroup } from 'react-bootstrap';
 import '../../../assets/css/style.css';
 import Logo from '../../../assets/images/logo.png';
 
@@ -26,11 +26,11 @@ function Sidebar(props) {
 
                         {/* <!-- sidebar nav start --> */}
                         <ListGroup class="nav nav-pills nav-stacked custom-nav">
-                            <ListGroup.Item><a href="index.html"><i class="fa fa-tachometer"></i><span> Dashboard</span></a></ListGroup.Item>
-                            <ListGroup.Item><a href="cards.html"><i class="fa fa-cogs"></i> <span>Default cards</span></a></ListGroup.Item>
-                            <ListGroup.Item><a href="pricing.html"><i class="fa fa-table"></i> <span>Pricing tables</span></a></ListGroup.Item>
-                            <ListGroup.Item><a href="blocks.html"><i class="fa fa-th"></i> <span>Content blocks</span></a></ListGroup.Item>
-                            <ListGroup.Item><a href="forms.html"><i class="fa fa-file-text"></i> <span>Forms</span></a></ListGroup.Item>
+                            <ListGroup.Item><a href="index"><i class="fa fa-tachometer"></i><span> Dashboard</span></a></ListGroup.Item>
+                            <ListGroup.Item><a href="cards"><i class="fa fa-cogs"></i> <span>Default cards</span></a></ListGroup.Item>
+                            <ListGroup.Item><a href="pricing"><i class="fa fa-table"></i> <span>Pricing tables</span></a></ListGroup.Item>
+                            <ListGroup.Item><a href="blocks"><i class="fa fa-th"></i> <span>Content blocks</span></a></ListGroup.Item>
+                            <ListGroup.Item><a href="forms"><i class="fa fa-file-text"></i> <span>Forms</span></a></ListGroup.Item>
                         </ListGroup>
                         {/* <!-- //sidebar nav end --> */}
                         {/* <!-- toggle button start --> */}

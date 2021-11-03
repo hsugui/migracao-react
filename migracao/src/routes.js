@@ -10,7 +10,8 @@ import Forms from './pages/Forms/Forms'
 export const Routes = () => {
     return (
         <Switch>
-            <Route path="/index" component={Index} exact/>
+            <Route path="/" component={Index} exact/>
+            <Route path="/index" component={Index}/>
             <Route path="/cards" component={Cards}/>
             <Route path="/pricing" component={Pricing}/>
             <Route path="/blocks" component={Blocks}/>
