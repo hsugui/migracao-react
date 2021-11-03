@@ -2,6 +2,7 @@ import React from 'react'
 import { ListGroup } from 'react-bootstrap';
 import '../../../assets/css/style.css';
 import Logo from '../../../assets/images/logo.png';
+import Toggle from './Toggle';
 
 function toggleMenu() {
     let body = document.querySelector("body");
@@ -47,7 +48,7 @@ function Sidebar(props) {
                         </ul>
                         {/* <!-- //sidebar nav end --> */}
                         {/* <!-- toggle button start --> */}
-                        <a class="toggle-btn" onclick={toggleMenu()}>
+                        <a class="toggle-btn" onclick={ () => this.toggleMenu()}>
                             <i class="fa fa-angle-double-left menu-collapsed__left"><span>Collapse Sidebar</span></i>
                             <i class="fa fa-angle-double-right menu-collapsed__right"></i>
                         </a>
