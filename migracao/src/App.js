@@ -4,14 +4,16 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Header from './components/template/Header/Header'
 import Footer from './components/template/Footer/Footer'
+import Sidebar from './components/template/Sidebar/Sidebar'
 
 function App() {
   return (
     <>
-      {/* <Header/> */}
-      <Router>
-        <Routes/>
-      </Router>
+      <Header/>
+      <Sidebar/>
+        <Router>
+          <Routes/>
+        </Router>
       <Footer/>
     </>
   );

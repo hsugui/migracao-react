@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Breadcrumb, Nav, Row, Col, Card, Form } from 'react-bootstrap';
+import { Container, Breadcrumb, Nav, Card, Form } from 'react-bootstrap';
 import '../../assets/css/style.css';
 
 function Forms(props) {
